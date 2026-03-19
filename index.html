@@ -8,13 +8,19 @@
     <link rel="stylesheet" href="style.css">
     <!-- Dans le <head> -->
     <link rel="stylesheet" href="https://fontawesome.com/icons/computer?f=classic&s=thin">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
 </head>
 
 <body>
     <header>
         <nav>
             <div class="logo"></div>
-            <ul class="nav-links">
+            <div class="menu-toggle" id="mobile-menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul class="nav-links" id="nav-links">
                 <li><a href="#accueil">Accueil</a></a></li>
                 <li><a href="#projets">Mes projets</a></li>
                 <li><a href="#contact">Me contacter</a></li>
@@ -25,9 +31,12 @@
     <main>
         <!-- Section Accueil -->
         <section id="accueil">
-            <h1>Salut je suis <span class="highlight">EHUD EDOH</span></h1>
-            <p>Etudiant en Génie Logiciel & passionné de systèmes embarqués</p>
-            <a href="#projets" class="btn">Voir mes projets</a>
+            <div class="hero-content">
+                <img src="profile.jpeg" alt="profile" class="profile-pic">
+                <h1>Salut je suis <span class="highlight">EHUD EDOH</span></h1>
+                <p>Etudiant en Génie Logiciel & passionné de systèmes embarqués</p>
+                <a href="#projets" class="btn">Voir mes projets</a>
+            </div>
         </section>
 
         <!-- Section Compétences -->
@@ -46,6 +55,14 @@
         <section id="projets">
             <h2>Mes projets</h2>
             <div class="projets-grid">
+                <article class="projet-card">
+                    <h3>Nom du projet</h3>
+                    <p>Description du projet</p>
+                </article>
+                <article class="projet-card">
+                    <h3>Nom du projet</h3>
+                    <p>Description du projet</p>
+                </article>
                 <article class="projet-card">
                     <h3>Nom du projet</h3>
                     <p>Description du projet</p>
